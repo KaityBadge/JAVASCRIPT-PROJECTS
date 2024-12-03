@@ -7,5 +7,20 @@
     </head>
     <body>
         <h1> JS Project One: Expressions</h1>
+        <h2> Creating an HTML Event</h2>
+            <p> This is the onlick attribute. <br>
+            I will create a button and attatch JavaScript code to it <br>
+            so it will display the date and time.</p>
+            <button onclick="this.innerHTML=Date()"> Click Here for the date and time </button>
+
+        <h2> Another Example of an HTML Event</h2>
+            <p>This is the onmouse over attribute. <br>
+            When the user moves their mouse over the following text <br>
+            it will display in a different color </p>
+            <h3 id="demo" onmouseover="mouseOver()"> Move your mouse over this text!</h3>
+            <p> The text will stay red until I create another event<br>
+            That event is called mouseout, it is be applied the same way </p>
+            <h3 id="demo2" onmouseover="mouseOver()" onmouseout="mouseOut()"> Move your mouse over this text!</h3>
+                
     </body>
 </html>

@@ -25,3 +25,14 @@ document.write(Dad); //Telling the computer to find a specific variable and prin
 document.write(3+3); //three plus three is the expression
 // The statement is document.write() because it performs a task of writing on the document
 // The expression (3+3) will result in a value which means the computer will print the value of 6
+
+
+//MOUSEOVER EVENT
+function mouseOver() {
+    document.getElementById('demo').style.color = 'red';
+    document.getElementById('demo2').style.color = 'red';
+};
+
+function mouseOut() {
+    document.getElementById('demo2').style.color= 'black';
+};
