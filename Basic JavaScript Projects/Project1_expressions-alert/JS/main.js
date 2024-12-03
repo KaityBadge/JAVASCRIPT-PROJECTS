@@ -11,12 +11,12 @@ document.write("Do what you want with your life, "
     +"because it\'s your life, "    //The plus sign is an operator that let's me add strings together
     + "nobody lives it like you do. ");  //The strings will be combind one after another, and look like one sentence.
 
-var C = "After this comment" + ", is this comment.";  //Here I am creating a variable with a value of two strings
+var C = "After this comment" + ", is this comment. ";  //Here I am creating a variable with a value of two strings
 document.write(C);  //Telling the computer to print the value of variable C, which will pring both strings in order
 
 
 //Here I have assigned multiple variables
-var Family = "The Badgleys", Dad = "Kaity", Mom = "Grace", Dog = "Benny";
+var Family = "The Badgleys ", Dad = "Kaity ", Mom = "Grace ", Dog = "Benny ";
 document.write(Dad); //Telling the computer to find a specific variable and print its value
 //This should find the variable called Dad and pring its value of Kaity 
 
