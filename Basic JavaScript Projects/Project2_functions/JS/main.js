@@ -30,3 +30,11 @@ function myFunction() {
     document.getElementById("Concatenate").innerHTML=sentence; //js code links to the p element in HTML file that has the same id
 }
 
+//Creates a Function and defines the parameters
+function multiplyTwo(x, y) {
+    return x * y; //code to be executed is multiplying x and y
+}
+
+
+let result = multiplyTwo(5, 20); //Defines the values of x and y
+document.getElementById("multiply").innerHTML = result;
