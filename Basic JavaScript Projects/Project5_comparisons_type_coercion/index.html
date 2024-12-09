@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Project Five: Type Coercion </title>
+        
+    </head>
+
+    <body>
+        <!--Links the main.js file to this HTML document-->
+        <script src="JS/main.js"></script>
+
+        <!--Associates this paragraph with the NewFunction created in the main.js file-->
+        <!--onclick is the HTML Event that calls on the function to be performed and displayed-->
+        <!-- what displays when clicked is "NaN" because 9/0 is not a number -->
+        <p id="practice" onclick="NewFunction()"> 9 divides by 0 </p>
+
+        <!--calls on the test_NaN function to display when clicked on-->
+        <!--The browser will display the result where the ID is linked-->
+        <p id="Test_1" onclick="test_NaN()"> the statement is a string not a number </p>
+
+        <!--calls on the test2_NaN function to display when clicked on-->
+        <p id="Test_2" onclick="test2_NaN()"> 567 is not a number</p>
+
+    </body>
+
+</html>
