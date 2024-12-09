@@ -69,3 +69,15 @@ console.log(16>18);
 function equalityCheck(){
     document.getElementById("doubleEqual").innerHTML = (57 == 56+1);
 }
+
+//Triple equal sign tells computer to compare the value and value type
+function tripleEqual(){
+    //returns "true" because the data type and data itself are the same
+    document.getElementById("dataMatch1").innerHTML= ("this is a string" === "this is a string");
+    //returns "false" because the data types and data itself on the left and right side are not the same
+    document.getElementById("dataMatch2").innerHTML= ("56" === 58);
+    //returns "false" because the data types on each side are different even though the data values are the same
+    document.getElementById("dataMatch3").innerHTML= ("56" === 56);
+    //returns "false" because the data types are the same but the values are different
+    document.getElementById("dataMatch4").innerHTML= ("this string says one thing" === "this string says something else");
+}
