@@ -39,3 +39,12 @@ function test2_NaN() {
     //isNaN function will determine that 567 IS A NUMBER so browser will display the word false
     document.getElementById("Test_2").innerHTML = isNaN('567');
 }
+
+
+//Window will display 'infinity' because the number is larger than the maximum floating point
+//floating point limit is 1.797693134862315E308
+
+document.write(1.9E308)
+
+//window will display negative infinity because the number is smaller than the negative floating point
+document.write(-2E309)
