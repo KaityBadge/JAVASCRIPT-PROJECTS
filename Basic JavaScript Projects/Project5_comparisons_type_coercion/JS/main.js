@@ -81,3 +81,25 @@ function tripleEqual(){
     //returns "false" because the data types are the same but the values are different
     document.getElementById("dataMatch4").innerHTML= ("this string says one thing" === "this string says something else");
 }
+
+
+//the AND operator is represented by double && symbol
+function operatorAnd(){
+    //displays "true" by determining that 5 is greater than 2 AND  6 is greater than one
+    document.getElementById("AND").innerHTML = (5>2 && 6>1);
+}
+
+//the OR operator is represented by the double || symbol
+function operatorOr(){
+    //displays "false" by determining if logic of BOTH are false
+    document.getElementById("tester1").innerHTML = (5>6 || 6>8);
+    //displays "true" by determining if either one OR the other is true
+    document.getElementById("tester2").innerHTML = (5<6 || 6>8);
+}
+
+//the NOT operator is represented by the ! symbol
+//! means "this is not true"
+function operatorNot(){
+    //displays "true" because the operation of 55 > 57 is not true.
+    document.getElementById("NOT").innerHTML = !(55 > 57);
+}
