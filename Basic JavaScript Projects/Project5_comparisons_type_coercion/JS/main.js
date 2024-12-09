@@ -48,3 +48,24 @@ document.write(1.9E308)
 
 //window will display negative infinity because the number is smaller than the negative floating point
 document.write(-2E309)
+
+
+//BOOLEAN LOGIC
+
+//Uses Boolean logic to display "true"
+document.write(12>=10)
+
+//Uses Boolean logic to display "false"
+document.write(5>8)
+
+
+//Displays result in the console, NOT on the HTML page itself
+console.log(45 +10);
+//Using boolean logic to display in console
+console.log(16>18);
+
+//Double Equal Signs to compare equality of left and right side of ==
+//using the document.getElementById method so I can choose where it displays on the HTML page
+function equalityCheck(){
+    document.getElementById("doubleEqual").innerHTML = (57 == 56+1);
+}
