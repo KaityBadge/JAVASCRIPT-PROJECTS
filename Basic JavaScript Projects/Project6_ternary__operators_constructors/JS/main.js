@@ -22,3 +22,40 @@ function Vote_Function(){
     //Displays a message depending on the condition of Age < 18
     document.getElementById("VOTE").innerHTML = can_vote + " to vote in the U.S.";
 }
+
+
+//KEYWORDS AND CONSTRUCTORS
+
+function Vehicle (Make, Model, Year, Color) {
+    this.Vehicle_Make = Make;
+    this.Vehicle_Model = Model;
+    this.Vehicle_Year = Year;
+    this.Vehicle_Color = Color;
+}
+
+var Jack = new Vehicle ("Dodge", "Viper", 2020, "Red");
+var Emily = new Vehicle ("Jeep", "Trail Hawk", 2019, "White and Black");
+var Erik = new Vehicle ("Ford", "Pinto", 1971, "Mustard");
+function myFunction() { 
+    document.getElementById("Keywords_and_Constructors").innerHTML = 
+    "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year;
+}
+
+
+function Career (Salary, Benefits, Contract) {
+    this.Career_Salary = Salary;
+    this.Career_Benefits = Benefits;
+    this.Career_Contract = Contract;
+}
+
+var Traveling_Nurse = new Career ("120,000", "full", "13 weeks" );
+var Bank_Teller = new Career ("36,000", "standard", "temporary");
+var FBI_Agent = new Career ("106,000", "full", "no");
+function newFunction() {
+    document.getElementById("New_and_This").innerHTML = 
+    "If you're thinking about becoming a traveling nurse, they do have "
+    + Traveling_Nurse.Career_Benefits + " benefits and make around $"
+    + Traveling_Nurse.Career_Salary
+    + ". Just know that they typically have a contract of "
+    + Traveling_Nurse.Career_Contract
+}
