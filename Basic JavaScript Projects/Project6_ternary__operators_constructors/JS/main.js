@@ -41,13 +41,14 @@ function myFunction() {
     "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year;
 }
 
-
+//the object ype of this function is Career
 function Career (Salary, Benefits, Contract) {
+    //the values of this. will become a new object
     this.Career_Salary = Salary;
     this.Career_Benefits = Benefits;
     this.Career_Contract = Contract;
 }
-
+//Uses the above function Career to create "new career" objects
 var Traveling_Nurse = new Career ("120,000", "full", "13 weeks" );
 var Bank_Teller = new Career ("36,000", "standard", "temporary");
 var FBI_Agent = new Career ("106,000", "full", "no");
@@ -58,4 +59,16 @@ function newFunction() {
     + Traveling_Nurse.Career_Salary
     + ". Just know that they typically have a contract of "
     + Traveling_Nurse.Career_Contract
+}
+
+//Creates a NESTED FUNCTION "Pluse_two" within the function "count_Function"
+function count_Function() {
+    document.getElementById("Nested_Function").innerHTML = count_by_Two();
+    function count_by_Two() {
+        var Begin_count = 2;
+        function Plus_two() {Begin_count += 2;}
+        Plus_two();
+        return Begin_count;
+
+    }
 }
