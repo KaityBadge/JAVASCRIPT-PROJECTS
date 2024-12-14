@@ -22,3 +22,34 @@ function slice_Method() {
     //tells the computer to display the contents of the variable "Section" (sliced out characters)
     document.getElementById("Slice").innerHTML = Section ;
 }
+
+//Creates a function that converts a number to a string
+function string_Method() {
+    var X = 3600 ; //Gives X a number value
+    //.toString tells the computer to convert the variable "X" from a number to a string representation
+    document.getElementById("Number_to_String").innerHTML = X.toString();
+    //this is useful because once a number is converted to a string, we can perform string operations on it (like concatenating)
+}  
+
+//Creates a function that uses .toPrecision method 
+function precision_Method() {
+    var Y = 1.2
+    //.toPrecision formats the number to the TOTAL specified length of numbers
+    //in this example it is (5) so we count to 5 number spaces which is 1.2000
+    document.getElementById("Precision").innerHTML = Y.toPrecision (5);
+}   
+
+//Creates a function that uses .toFixed method 
+function tofixed_Method() {
+    var Z = 1.2
+    //.toFixed formats the number to a FIXED number of digits AFTER the decimal
+    //in this example we will count 5 digits after the decimal which is 1.20000
+    document.getElementById("Fixed").innerHTML = Z.toFixed (5);
+}   
+
+//Create a function that uses the .valueOf method
+function valueof_Method() {
+    var W = 1.2
+    document.getElementById("value").innerHTML = W.valueOf;
+    //.valueOf returns the primitive value of the string object
+}
