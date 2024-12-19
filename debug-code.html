@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using the Console to Debug Code</title>
+        <meta charset="UTF-8">
+    </head>
+    <body onload="pageLoad()">
+        <button onclick="clickCount()">Counter</button>
+        <button onclick="resetCount()">Reset Counter</button>
+        <p id="counter"></p>
+        <script>
+            //creates a greeting when the page first loads
+            function pageLoad(){
+                var greeting="Welcome to ";
+                greeting += "learning how to debug code ";
+                greeting += "using the console with dev tools!";
+                window.alert(greeting);
+            }
+
+            //sets default count to 0
+            var count = 0;
+            //counts the number of clicks
+            function clickCount(){
+                count ++;
+                document.getElementById("counter").innerHTML = count;
+            }
+            //resets number of clicks
+            function resetCount(){
+                //by setting the variable to an empty string, any text that is displayed will be removed
+                var count = ""; 
+                document.getElementById("counter").innerHTML = count;
+            }
+            //Dev tools Assignment
+            A = "Always ";
+            B = "remember: ";
+            document.write(A + B);
+
+            X = "you ";
+            Y = "are ";
+            document.write(X + Y);
+
+            M = "unique, ";
+            N = "just like everyone else.";
+            document.write(M + N);
+        </script>
+    </body>
+</html>
