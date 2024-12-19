@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/main.css">
+        <title>Project Nine: Countdown Slideshow </title>
+        
+    </head>
+
+    <body>
+        <!----COUNTDOWN FEATURE-->
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value=""/>
+        <button onclick="countdown()">Click here</button>
+        <p id="timer"></p>
+        
+
+        <!-------SLIDESHOW------->
+
+        <!--container for slideshow-->
+        <div class = "slideshow-container">
+
+            <!--Full-width images with number and text caption-->
+            <div class="mySlides fade">
+                <div class="numbertext"> 1 / 3</div>
+                <img src="images/car1.jpg" style="width:100%">
+                <div class="text"> Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"> 2 / 3</div>
+                <img src="images/car2.jpg" style="width:100%">
+                <div class="text"> Caption</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"> 3 / 3</div>
+                <img src="images/car3.jpg" style="width:100%">
+                <div class="text"> Caption</div>
+            </div>
+
+            <!--Next and Previous buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;<!--left arrow code--></a>
+            <a class="next" onclick="plusSlides(1)">&#10095;<!--right arrow code--></a>
+        </div>
+        <br>
+
+        <!--The dots and circles to click on for other images-->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script src="JS/main.js"></script>
+    </body>
+</html>
