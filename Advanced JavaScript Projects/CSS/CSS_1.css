@@ -1,0 +1,36 @@
+/*Adds padding the input fields so they aren't right on top of each other*/
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid grey;
+    border-radius: 5px;
+    /*makes input elements fit in the container*/
+    display: inline-block;
+    /*padding and border are included in elements total width and height*/
+    box-sizing: border-box;
+}
+
+/*styles the submit button*/
+input[type=submit]{
+    font-weight: bold;
+    font-size: medium;
+    width: 100%;
+    background-color: grey ;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*styles submit button when hovered over*/
+input[type=submit]:hover{
+    background-color: rgba(128, 128, 128, 0.404);
+}
+
+/*Creates a container for the form*/
+div{
+    border-radius: 5px;
+    background-color: rgb(209, 211, 212);
+    padding: 30px;
+}
