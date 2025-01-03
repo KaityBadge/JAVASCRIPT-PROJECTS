@@ -1,0 +1,80 @@
+/*Bangers font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/*Joti One font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+
+/*moves menu towards the center*/
+#menuBG {
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 400px;
+    height: 200px;
+}
+
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+/*puts sizes and meats side by side*/
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+/*centers the 'place order' button on the menu*/
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+}
+
+/*BASIC STYLING*/
+body{
+    background-color: bisque;
+}
+
+h1 {
+    font-family: "Bangers";
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-family: "Joti One";
+    color: rgb(231, 32, 32);
+    font-size: x-large;
+}
+
+.menu {
+    font-family: "Joti One";
+    color: rgb(111, 115, 117);
+}
