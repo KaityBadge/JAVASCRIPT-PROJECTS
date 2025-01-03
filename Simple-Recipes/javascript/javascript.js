@@ -10,12 +10,10 @@ var btns = document.querySelectorAll("input.modal-button");
 var modals = document.querySelectorAll(".recipe-modal");
 
 //Closes all modals after 10 seconds
-function hideModal() {
+function hideModal(modal) {
     setTimeout(function() {
-        modals.forEach(function(modal) {
-            modal.style.display = "none";
-        });
-    }, 10000);
+        modal.style.display = "none";
+        }, 10000);
 }
 
 //get the <span> element that closes the modal
@@ -28,24 +26,26 @@ for (var i = 0; i < btns.length; i++) {
     //the onclick event catches which button in the array of buttons
     // was clicked on and call a function that takes the event object as an argument
     btns[i].onclick = function (event) {
+        var modal = document.querySelector(event.target.getAttribute
         ("href"));
         modal.style.display = "block";
+        hideModal(modal);
     }
 }
 
 //When the user clicks on <span> (x), close the modal
 //for loop iterates through the array of close buttons
 //and find the correct one based on the index
-for (var i = 0; i < closeBtn.length; i++) {
+for (var i = 0; i < closeBtn.length; i++) [
     closeBtn[i].onclick = function () {
         for (var index in modals) {
             if (modals[index].style) {
                 //once the corresponding modal is targeted we change the display back to none
-                modals[index].style.display = "none"
+                modals[index].style.display = "none";
             }
         }
     }
-}
+]
 
 //EMAIL VALIDATION
 
