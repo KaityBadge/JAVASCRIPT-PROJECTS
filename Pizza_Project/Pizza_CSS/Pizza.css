@@ -4,6 +4,68 @@
 /*Joti One font from fonts.google.com*/
 @import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
 
+/*PIZZA SHOP TITLE*/
+.shine{
+    background-image: linear-gradient(0.15turn,
+    #000000 40%,
+    #a8a8a8 50%,
+    #000000 60%);
+    /*gradient background will not expand past visible areas of text within element*/
+    background-clip: text;
+    /*vendor prefix properties allows background clip to work in different browsers*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*add transition properties in video*/
+.title {
+    padding-top: 150px;
+    font-size: 150px;
+    transition: .5s ease;
+}
+
+/*Shrinks the element with this class to this size*/
+.title-scrolled {
+    font-size: 100px;
+    transition: .5s ease;
+}
+
+
+/*IMAGES*/
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+}
+
+.row {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.column {
+    width: 33%;
+    margin: 50px;
+}
+
+img {
+    width: 50%; /*img takes up 50% of space in the column*/
+    height: 50%;
+    cursor: pointer;
+}
+
+.pizza-name {
+    font-size: 30px;
+    display: none; /*hides pizza name for jQuery show and hide effect*/
+}
+
+
+/*MENU ORDERING*/
+
 /*moves menu towards the center*/
 #menuBG {
     width: 400px;

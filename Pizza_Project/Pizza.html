@@ -4,12 +4,45 @@
         <title>Pizza Drill Demo</title>
         <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <script src="Pizza_JavaScript/Pizza.js" defer></script>
         <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css"/>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
     </head>
     <body>
+        <!--PIZZA SHOP TITLE HEADER-->
+        <div class="container">
+            <h1 class="title shine">EAT PIZZA</h1>
+        </div>
+
+        <!--IMAGES-->
+        <div class="container">
+            <div id="cartoonPizza" class="row">
+                <div class="column">
+                    <div id="pizzaGuy" class="pizza-name">
+                        <h2>Mascot Pizza</h2>
+                    </div>
+                    <img src="images/pizza3.png" alt="image of cartoon pizza person">
+                </div>
+                <div class="column">
+                    <div id="veggiePizza" class="pizza-name">
+                        <h2>Margherita Pizza</h2>
+                    </div>
+                    <img src="images/pizza1.png" alt="image of Margherita pizza">
+                </div>
+                <div class="column">
+                    <div id="meatPizza" class="pizza-name">
+                        <h2>Combo Pizza</h2>
+                    </div>
+                    <img src="images/pizza2.png" alt="image of Combination pizza">
+                </div>
+            </div>
+        </div>
+         
+
+        <!--MENU ORDERING-->
         <div id="menuBG">
-            <h1 style="margin:0 0px 0 20px;">Pizza Drill Tutorial</h1>
+            <h1 style="margin:0 0px 0 20px;">Place Your Order Here!</h1>
             <input id="btnOrder" type="button" onclick="getReceipt()"
                 value="Place Order">
                 <form id="frmMenu">
@@ -63,5 +96,6 @@
                     </div>
                 </form>
         </div>
+        <script src="Pizza_JavaScript/Pizza.js" type="text/javascript"></script>
     </body>
 </html>

@@ -1,3 +1,37 @@
+//JQUERY EFFECTS using the $
+
+//creates a shine effect on the "EAT PIZZA" header
+$(document).ready(function(){
+    function shineTitle() {
+        $(".shine").animate({backgroundPositionX: '1600px'}, 3000)
+        .animate({backgroundPositionX: '-800px'}, 3000);
+    };
+    //sets interval to repeat the shine effect with 0 seconds between repetitions
+    setInterval(shineTitle, 0);
+
+    //when users mouse moves over div areas with the #cartoonPizza ID
+    //it triggers the images to slide down one after another
+    $("#cartoonPizza").on({
+        mouseenter: function() {
+            //JQUERY targets each pizza ID
+            $("#pizzaGuy").show(1000);
+            $("#veggiePizza").show(1500);
+            $("#meatPizza").show(2000);
+        },
+    
+        //when user moves mouse away from div area with #cartoonPizza ID
+        //triggers images to slide back up
+        mouseleave: function() {
+            $("#pizzaGuy").hide(2000);
+            $("#veggiePizza").hide(1500);
+            $("#meatPizza").hide(1000);
+        }
+    });
+}),
+
+
+
+
 function getReceipt() { 
     //This initializes our string so it can get passed
     //from function to function, growing line by line into a full receipt
