@@ -9,16 +9,27 @@
 </head>
 
 <body>
+	<!--Response displays if the request has been completed and was successful
+	STEP 3 in ajax.Script.js file-->
 	<div class='container' id="content">
 		<h1>Sign up for our Newsletter</h1>
 		<div class="display">
 			<form>
 				<input id="fullName" placeholder="Name">
 				<input placeholder="Email">
+				<!--onclick method calls the getMsg function-->
 				<input onlclick="getMsg();", type="button" class="btn" value="Submit" onclick="getMsg();"/>
 			</form>
 		</div>
 	</div>
 	<script src="ajaxScript.js"></script>
+	<!--To run this file you must use XAMPP Control Panel
+	to run the file on the Apache virtual server-->
+	<!--open a web brower and go to www.apachefriends.org
+	click download, then click FAQs link for your machine type
+	to find out how to test that everything worked-->
+	<!--For Windows users type this URL in your browser
+	http://localhost/(add file you want to display here) -->
+	<!-- http://localhost/ajax_basics.html-->
 </body>
 </html>
