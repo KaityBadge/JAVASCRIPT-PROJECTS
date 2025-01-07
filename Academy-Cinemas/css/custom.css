@@ -324,3 +324,63 @@ images on the page and overrides the img type selector styling*/
 .row{
     padding: 50px;
 }
+
+/*POPOVERS*/
+/*makes the star rating popover a smaller*/
+.star-rating {
+    width: 80%;
+}
+
+/*TOAST*/
+/*Places toast message in the center of the screen*/
+.custom-toast{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+/*BOOTSTRAP CALLOUT*/
+/*base class - applies basic styling to the callout box*/
+.callout {
+    background-color: white;
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+    border-left-width: 8px;
+    border-radius: .25rem;
+    border: 10px solid white;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/*modifier classes */
+/*informational callout are light blue*/
+.callout-info {
+    border-left-color: #5bc0de;
+}
+
+.callout-info h4 {
+    color: #5bc0de;
+}
+
+/*styles and positions the close button "X" on the callout*/
+.closebtn {
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 1px;
+    right: 5px;
+}
+
+.callout-h4 {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    padding: 25px 15px;
+}
+
