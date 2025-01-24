@@ -1,8 +1,12 @@
 # JAVASCRIPT-PROJECTS
 
 ## Welcome!
-- This is my first experience using JavaScript!
-- I will be storing projects from the online JavaScript course through The Tech Academy.
+- These are some of my first projects using JavaScript!
+  - Academy Cinemas
+  - Pizza_Project
+  - Simple Recipes
+  - TicTacToe
+
 
 ## Goals
 - I aim to learn a whole new coding language from square one.
